@@ -1,0 +1,32 @@
+{
+  "name": "spike_op_hook",
+  "version": "1.0.0",
+  "description": "Spike for Openpath Hook",
+  "main": "index.js",
+  "engines": {
+    "node": "13.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InvisibleTech/spike_op_hook.git"
+  },
+  "keywords": [
+    "spike",
+    "open",
+    "path",
+    "hook"
+  ],
+  "author": "John Ferguson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InvisibleTech/spike_op_hook/issues"
+  },
+  "homepage": "https://github.com/InvisibleTech/spike_op_hook#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

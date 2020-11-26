@@ -6,9 +6,9 @@ app.use(express.static("public"));
 app.use(express.json());
 
 app.get("/fake_auth", (req, res) => {
-  console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req");
-  console.log(req);
-  console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req");
+  console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req headers");
+  console.log(JSON.stringify(req.headers));
+  console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req headers");
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump query params");
   console.log(req.query);
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump query params");

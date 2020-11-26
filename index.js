@@ -17,9 +17,9 @@ app.get("/fake_auth", (req, res) => {
 });
 
 app.post("/dump_req_allow", (req, res) => {
-  console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req");
-  console.log(req);
-  console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req");
+  console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req headers");
+  console.log(JSON.stringify(req.headers));
+  console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req headers");
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req body");
   console.log(req.body);
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req body");

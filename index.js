@@ -16,7 +16,7 @@ app.get("/fake_auth", (req, res) => {
   res.end(); // Empty SUCCESS
 });
 
-app.post("/dump_req_allow", (req, res) => {
+app.post("/dump_req_allow/dump_req_allow", (req, res) => {
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req headers");
   console.log(JSON.stringify(req.headers));
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req headers");
@@ -24,7 +24,11 @@ app.post("/dump_req_allow", (req, res) => {
   console.log(req.body);
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req body");
 
-  res.end(); // Empty SUCCESS
+  res.status(200).json({
+    id: 1,
+    createdAt: 1472069465,
+    name: "Fish Heads Fish Heads",
+  }); // Empty SUCCESS
 });
 
 const listener = app.listen(process.env.PORT || 0, () => {

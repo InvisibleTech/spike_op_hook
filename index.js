@@ -25,7 +25,7 @@ app.post("/dump_req_allow", (req, res) => {
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req body");
 
   res.status(200).json({
-   ...req.body.json
+   ...req.body
   }); // Empty SUCCESS
 });
 

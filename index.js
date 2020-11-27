@@ -25,9 +25,7 @@ app.post("/dump_req_allow", (req, res) => {
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req body");
 
   res.status(200).json({
-    id: 1,
-    createdAt: 1472069465,
-    name: "Fish Heads Fish Heads",
+   ...req.body.json
   }); // Empty SUCCESS
 });
 

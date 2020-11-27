@@ -16,7 +16,7 @@ app.get("/fake_auth", (req, res) => {
   res.end(); // Empty SUCCESS
 });
 
-app.post("/dump_req_allow/dump_req_allow", (req, res) => {
+app.post("/dump_req_allow", (req, res) => {
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req headers");
   console.log(JSON.stringify(req.headers));
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> dump req headers");
